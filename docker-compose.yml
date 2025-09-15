@@ -1,0 +1,94 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        - DEV=true
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+      - dev-static-data:/vol/web
+    command: >
+      sh -c "crond &&
+             python manage.py crontab remove &&
+             python manage.py crontab add &&
+             python manage.py wait_for_db &&
+             python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    environment:
+      - DEBUG=1
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - SECRET_KEY=${DJANGO_SECRET_KEY}
+      - ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
+      - CORS_ALLOWED_ORIGINS=${DJANGO_CORS_ALLOWED_ORIGINS}
+      - CHARGEBEE_API_KEY=${CHARGEBEE_API_KEY}
+      - CHARGEBEE_SITE=${CHARGEBEE_SITE}
+      - REDIS_PUBSUB_CONF_STRING=${REDIS_PUBSUB_CONF_STRING}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_API_KEY_DAYSIAI=${OPENAI_API_KEY_DAYSIAI}
+      - OPENAI_MODEL=${OPENAI_MODEL}
+      - SENDGRID_API_KEY=${SENDGRID_API_KEY}
+      - APP_URL=${APP_URL}
+      - BASE_URL=${BASE_URL}
+      - INTERACTION_URL=${INTERACTION_URL}
+      - TEST_ORGANIZATION=${TEST_ORGANIZATION}
+      - TWILIO_OTP_FROM_NUMBER=${TWILIO_OTP_FROM_NUMBER}
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+
+    networks:
+      - redis-django
+    depends_on:
+      - redis
+  #    depends_on:
+  #      - db
+  daphne:
+    build:
+      context: .
+    container_name: daphne
+    #command: daphne -b 0.0.0.0 -p 9001 app.asgi:application
+    command: daphne -b 0.0.0.0 -p 9002 -e ssl:9001:privateKey=/app/private.pem:certKey=/app/cert.pem app.asgi:application
+    volumes:
+      - ./app:/app
+    ports:
+      - "9001:9001"
+      - "9002:9002"
+    environment:
+      - REDIS_PUBSUB_CONF_STRING=${REDIS_PUBSUB_CONF_STRING}
+    depends_on:
+      - app
+    networks:
+      - redis-django
+
+  redis:
+    image: redis/redis-stack:6.2.6-v7
+    container_name: redis-pubsub
+    ports:
+      - "6379:6379"
+    networks:
+      - redis-django
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command: >
+      sh -c "redis-server /usr/local/etc/redis/redis.conf"
+
+#  db:
+#    image: postgres:13-alpine
+#    volumes:
+#      - dev-db-data:/var/lib/postgresql/data
+#    environment:
+#      - POSTGRES_DB=devdb
+#      - POSTGRES_USER=devuser
+#      - POSTGRES_PASSWORD=changeme
+
+volumes:
+  #  dev-db-data:
+  dev-static-data:
+
+networks:
+  redis-django:
+    driver: bridge
