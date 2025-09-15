@@ -42,14 +42,14 @@ services:
 
     networks:
       - redis-django
-    depends_on:
-      - redis
+    # depends_on:
+    #   - redis
   #    depends_on:
   #      - db
   daphne:
     build:
       context: .
-    container_name: daphne
+    container_name: daphne-50p
     #command: daphne -b 0.0.0.0 -p 9001 app.asgi:application
     command: daphne -b 0.0.0.0 -p 9002 -e ssl:9001:privateKey=/app/private.pem:certKey=/app/cert.pem app.asgi:application
     volumes:
@@ -66,7 +66,7 @@ services:
 
   redis:
     image: redis/redis-stack:6.2.6-v7
-    container_name: redis-pubsub
+    container_name: redis-pubsub-50p
     ports:
       - "6379:6379"
     networks:
