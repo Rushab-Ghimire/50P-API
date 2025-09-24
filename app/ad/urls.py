@@ -1,5 +1,5 @@
 """
-URL mappings for the AD app.
+URL mappings for the Salon app.
 """
 
 from django.urls import (

@@ -1,0 +1,23 @@
+{
+  "fields": {
+    "type": "object",
+    "properties": {
+      "first_name": {
+        "type": "string"
+      },
+      "last_name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "primary_phone": {
+        "type": "string"
+      },
+      "primary_address": {
+        "type": "string"
+      }
+    }
+  },
+  "fieldSchema": {}
+}

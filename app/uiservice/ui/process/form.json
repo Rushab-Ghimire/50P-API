@@ -1,0 +1,20 @@
+{
+  "fields": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "inParams": {
+        "type": "string"
+      },
+      "outParams": {
+        "type": "string"
+      },
+      "apiEndpoint": {
+        "type": "string"
+      }
+    }
+  },
+  "fieldSchema": {}
+}

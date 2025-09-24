@@ -1,0 +1,14 @@
+{
+  "fields": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "specification": {
+        "type": "string"
+      }
+    }
+  },
+  "fieldSchema": {}
+}

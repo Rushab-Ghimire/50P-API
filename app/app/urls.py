@@ -23,10 +23,12 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
+from core import views as core_views
 from graphene_django.views import GraphQLView
 from django.views.decorators.csrf import csrf_exempt
 
 from core.schema import schema
+from core.schema_public import schema_public
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from graphene_django.views import GraphQLView
@@ -36,6 +38,8 @@ class PrivateGraphQLView(GraphQLView):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/health-check/', core_views.health_check, name='health-check'),
+    #path('api/sendgrid_mail_check/', core_views.sendgrid_mail_check, name='sendgrid-mail-check'),
     path('api/schema/', SpectacularAPIView.as_view(), name='api-schema'),
     path(
         'api/docs/',
@@ -44,7 +48,18 @@ urlpatterns = [
     ),
     #path("public-graphql", csrf_exempt(PrivateGraphQLView.as_view(graphiql=True, schema=schema_public))),
     path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True, schema=schema))),
+    path('api/user/', include('authtf.urls')),
+    path('api/', include('authtf.role_urls')),
+    path('api/', include('organization.urls')),
+    # path('api/recipe/', include('recipe.urls')),
+    path('api/', include('card.urls')),
+    path('api/', include('business.urls')),
+    path('api/', include('salon.urls')),
+    path('api/', include('uiservice.urls')),
+    path('api/payment/', include('subscription.payment_urls', namespace='payment')),
+    path('api/subscription/', include('subscription.urls', namespace='subscription')),
     path("pubsub/", include("pubsub.urls")),
+    path("api/newsletter/", include("newsletter.urls")),
     path('api/', include('ad.urls')),
 ]
 

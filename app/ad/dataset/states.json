@@ -1,0 +1,542 @@
+[
+    {
+        "id": "4099753",
+        "country_id": "395",
+        "state_name": "Arkansas",
+        "state_abbr": "AR",
+        "state_slug": "arkansas",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4138106",
+        "country_id": "395",
+        "state_name": "District of Columbia",
+        "state_abbr": "DC",
+        "state_slug": "district-of-columbia",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4142224",
+        "country_id": "395",
+        "state_name": "Delaware",
+        "state_abbr": "DE",
+        "state_slug": "delaware",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4155751",
+        "country_id": "395",
+        "state_name": "Florida",
+        "state_abbr": "FL",
+        "state_slug": "florida",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4197000",
+        "country_id": "395",
+        "state_name": "Georgia",
+        "state_abbr": "GA",
+        "state_slug": "georgia",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4273857",
+        "country_id": "395",
+        "state_name": "Kansas",
+        "state_abbr": "KS",
+        "state_slug": "kansas",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4331987",
+        "country_id": "395",
+        "state_name": "Louisiana",
+        "state_abbr": "LA",
+        "state_slug": "louisiana",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4361885",
+        "country_id": "395",
+        "state_name": "Maryland",
+        "state_abbr": "MD",
+        "state_slug": "maryland",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4398678",
+        "country_id": "395",
+        "state_name": "Missouri",
+        "state_abbr": "MO",
+        "state_slug": "missouri",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4436296",
+        "country_id": "395",
+        "state_name": "Mississippi",
+        "state_abbr": "MS",
+        "state_slug": "mississippi",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4482348",
+        "country_id": "395",
+        "state_name": "North Carolina",
+        "state_abbr": "NC",
+        "state_slug": "north-carolina",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4544379",
+        "country_id": "395",
+        "state_name": "Oklahoma",
+        "state_abbr": "OK",
+        "state_slug": "oklahoma",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4597040",
+        "country_id": "395",
+        "state_name": "South Carolina",
+        "state_abbr": "SC",
+        "state_slug": "south-carolina",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4662168",
+        "country_id": "395",
+        "state_name": "Tennessee",
+        "state_abbr": "TN",
+        "state_slug": "tennessee",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4736286",
+        "country_id": "395",
+        "state_name": "Texas",
+        "state_abbr": "TX",
+        "state_slug": "texas",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4826850",
+        "country_id": "395",
+        "state_name": "West Virginia",
+        "state_abbr": "WV",
+        "state_slug": "west-virginia",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4829764",
+        "country_id": "395",
+        "state_name": "Alabama",
+        "state_abbr": "AL",
+        "state_slug": "alabama",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4831725",
+        "country_id": "395",
+        "state_name": "Connecticut",
+        "state_abbr": "CT",
+        "state_slug": "connecticut",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4862182",
+        "country_id": "395",
+        "state_name": "Iowa",
+        "state_abbr": "IA",
+        "state_slug": "iowa",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4896861",
+        "country_id": "395",
+        "state_name": "Illinois",
+        "state_abbr": "IL",
+        "state_slug": "illinois",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4921868",
+        "country_id": "395",
+        "state_name": "Indiana",
+        "state_abbr": "IN",
+        "state_slug": "indiana",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "4971068",
+        "country_id": "395",
+        "state_name": "Maine",
+        "state_abbr": "ME",
+        "state_slug": "maine",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5001836",
+        "country_id": "395",
+        "state_name": "Michigan",
+        "state_abbr": "MI",
+        "state_slug": "michigan",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5037779",
+        "country_id": "395",
+        "state_name": "Minnesota",
+        "state_abbr": "MN",
+        "state_slug": "minnesota",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5073708",
+        "country_id": "395",
+        "state_name": "Nebraska",
+        "state_abbr": "NE",
+        "state_slug": "nebraska",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5090174",
+        "country_id": "395",
+        "state_name": "New Hampshire",
+        "state_abbr": "NH",
+        "state_slug": "new-hampshire",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5101760",
+        "country_id": "395",
+        "state_name": "New Jersey",
+        "state_abbr": "NJ",
+        "state_slug": "new-jersey",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5128638",
+        "country_id": "395",
+        "state_name": "New York",
+        "state_abbr": "NY",
+        "state_slug": "new-york",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5165418",
+        "country_id": "395",
+        "state_name": "Ohio",
+        "state_abbr": "OH",
+        "state_slug": "ohio",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5224323",
+        "country_id": "395",
+        "state_name": "Rhode Island",
+        "state_abbr": "RI",
+        "state_slug": "rhode-island",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5242283",
+        "country_id": "395",
+        "state_name": "Vermont",
+        "state_abbr": "VT",
+        "state_slug": "vermont",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5279468",
+        "country_id": "395",
+        "state_name": "Wisconsin",
+        "state_abbr": "WI",
+        "state_slug": "wisconsin",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5332921",
+        "country_id": "395",
+        "state_name": "California",
+        "state_abbr": "CA",
+        "state_slug": "california",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5417618",
+        "country_id": "395",
+        "state_name": "Colorado",
+        "state_abbr": "CO",
+        "state_slug": "colorado",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5481136",
+        "country_id": "395",
+        "state_name": "New Mexico",
+        "state_abbr": "NM",
+        "state_slug": "new-mexico",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5509151",
+        "country_id": "395",
+        "state_name": "Nevada",
+        "state_abbr": "NV",
+        "state_slug": "nevada",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5549030",
+        "country_id": "395",
+        "state_name": "Utah",
+        "state_abbr": "UT",
+        "state_slug": "utah",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5551752",
+        "country_id": "395",
+        "state_name": "Arizona",
+        "state_abbr": "AZ",
+        "state_slug": "arizona",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5596512",
+        "country_id": "395",
+        "state_name": "Idaho",
+        "state_abbr": "ID",
+        "state_slug": "idaho",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5667009",
+        "country_id": "395",
+        "state_name": "Montana",
+        "state_abbr": "MT",
+        "state_slug": "montana",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5690763",
+        "country_id": "395",
+        "state_name": "North Dakota",
+        "state_abbr": "ND",
+        "state_slug": "north-dakota",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5744337",
+        "country_id": "395",
+        "state_name": "Oregon",
+        "state_abbr": "OR",
+        "state_slug": "oregon",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5769223",
+        "country_id": "395",
+        "state_name": "South Dakota",
+        "state_abbr": "SD",
+        "state_slug": "south-dakota",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5815135",
+        "country_id": "395",
+        "state_name": "Washington",
+        "state_abbr": "WA",
+        "state_slug": "washington",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5843591",
+        "country_id": "395",
+        "state_name": "Wyoming",
+        "state_abbr": "WY",
+        "state_slug": "wyoming",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5855797",
+        "country_id": "395",
+        "state_name": "Hawaii",
+        "state_abbr": "HI",
+        "state_slug": "hawaii",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "5879092",
+        "country_id": "395",
+        "state_name": "Alaska",
+        "state_abbr": "AK",
+        "state_slug": "alaska",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "6254925",
+        "country_id": "395",
+        "state_name": "Kentucky",
+        "state_abbr": "KY",
+        "state_slug": "kentucky",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "6254926",
+        "country_id": "395",
+        "state_name": "Massachusetts",
+        "state_abbr": "MA",
+        "state_slug": "massachusetts",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "6254927",
+        "country_id": "395",
+        "state_name": "Pennsylvania",
+        "state_abbr": "PA",
+        "state_slug": "pennsylvania",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "6254928",
+        "country_id": "395",
+        "state_name": "Virginia",
+        "state_abbr": "VA",
+        "state_slug": "virginia",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "6254929",
+        "country_id": "395",
+        "state_name": "Guam",
+        "state_abbr": "GU",
+        "state_slug": "guam",
+        "state_country_abbr": "US",
+        "created_at": null,
+        "updated_at": null
+    },
+    {
+        "id": "6254935",
+        "country_id": "395",
+        "state_name": "Puerto Rico",
+        "state_abbr": "PR",
+        "state_slug": "puerto-rico",
+        "state_country_abbr": "US",
+        "created_at": "2022-03-22 09:46:35",
+        "updated_at": "2022-03-22 09:46:35"
+    },
+    {
+        "id": "6255472",
+        "country_id": "395",
+        "state_name": "New Island",
+        "state_abbr": "NI",
+        "state_slug": "new-island",
+        "state_country_abbr": "US",
+        "created_at": "2022-06-02 13:51:31",
+        "updated_at": "2022-06-02 13:51:31"
+    }
+]

@@ -1,0 +1,24 @@
+{
+  "fields": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "context": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "parent": {
+        "type": "integer"
+      }
+    }
+  },
+  "fieldSchema": {
+    "parent": {
+      "ui:widget": "hidden"
+    }
+  }
+}

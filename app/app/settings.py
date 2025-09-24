@@ -55,7 +55,18 @@ INSTALLED_APPS = [
     'graphene_django',
     'pubsub',
     'core',
+    'authtf',
+    'recipe',
+    'card',
+    'business',
+    'uiservice',
+    'processflow',
+    'subscription',
+    'organization',
+    'newsletter',
+    'salon',
     'graphql_jwt.refresh_token.apps.RefreshTokenConfig',
+    'agent',
     'ad',
 ]
 
@@ -201,11 +212,11 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#AUTH_USER_MODEL = 'authtf.User'
+AUTH_USER_MODEL = 'authtf.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
-    #'EXCEPTION_HANDLER': 'authtf.exceptions.custom_exception_handler',
+    'EXCEPTION_HANDLER': 'authtf.exceptions.custom_exception_handler',
 }
 
 SPECTACULAR_SETTINGS = {
@@ -224,14 +235,14 @@ CHANNEL_LAYERS = {
 }
 
 CRONJOBS = [
-    ('*/30 * * * *', 'ad.cron.my_scheduler', '>> /var/log/crontab_job.log 2>&1')
+    #('*/30 * * * *', 'ad.cron.patient_booking_reminder', '>> /var/log/crontab_job.log 2>&1')
 ]
 
 OPENAI_MODEL = os.environ.get("OPENAI_MODEL")
 
 SENDGRID_API_KEY = os.environ.get("SENDGRID_API_KEY")
 
-SYSTEM_NAME = "50Paisa"
+SYSTEM_NAME = "TileFlexAi"
 SYSTEM_APP_URL = os.environ.get("APP_URL")
 
 INTERACTION_URL = os.environ.get("INTERACTION_URL")

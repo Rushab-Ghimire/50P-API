@@ -46,23 +46,22 @@ services:
     #   - redis
   #    depends_on:
   #      - db
-  daphne:
-    build:
-      context: .
-    container_name: daphne-50p
-    #command: daphne -b 0.0.0.0 -p 9001 app.asgi:application
-    command: daphne -b 0.0.0.0 -p 9002 -e ssl:9001:privateKey=/app/private.pem:certKey=/app/cert.pem app.asgi:application
-    volumes:
-      - ./app:/app
-    ports:
-      - "9001:9001"
-      - "9002:9002"
-    environment:
-      - REDIS_PUBSUB_CONF_STRING=${REDIS_PUBSUB_CONF_STRING}
-    depends_on:
-      - app
-    networks:
-      - redis-django
+  # daphne:
+  #   build:
+  #     context: .
+  #   container_name: daphne-50p
+  #   command: daphne -b 0.0.0.0 -p 9002 -e ssl:9001:privateKey=/app/private.pem:certKey=/app/cert.pem app.asgi:application
+  #   volumes:
+  #     - ./app:/app
+  #   ports:
+  #     - "9001:9001"
+  #     - "9002:9002"
+  #   environment:
+  #     - REDIS_PUBSUB_CONF_STRING=${REDIS_PUBSUB_CONF_STRING}
+  #   depends_on:
+  #     - app
+  #   networks:
+  #     - redis-django
 
   redis:
     image: redis/redis-stack:6.2.6-v7
