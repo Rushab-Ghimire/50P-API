@@ -74,6 +74,7 @@ import ad.schemas.list_course as list_course
 import ad.schemas.list_subscription as list_susbscription
 import ad.schemas.site_content as site_content
 import ad.schemas.course_chapter as course_chapter
+import ad.schemas.sms_reminder as sms_reminder
 
 
 
@@ -152,6 +153,7 @@ class Query(
     pass
 
 class Mutation(
+                sms_reminder.sms_schema.Mutation,
                 course_chapter.course_chapter_schema.Mutation,
                 site_content.site_content_schema.Mutation,
                 list_course.list_course_schema.Mutation,
